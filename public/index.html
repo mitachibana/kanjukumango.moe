@@ -1,7 +1,94 @@
 <!DOCTYPE html>
-<html>
-<head><title>Home</title></head>
-<body>
-<h1>Welcome to My Dynamic Site</h1>
-</body>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="mitachibana, giftia, michael sickels, kanjuku mango" />
+    <meta
+      name="description"
+      content="Lots of mangoes, a blog, and just being bocchi bocchi"
+    />
+    <link href="styles/index-styles.css" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>Kanjuku Mango</title>
+  </head>
+  <body>
+    <div class="title">
+      <img class="logo" src="media/kanjuku-mango-logo.webp" />
+    </div>
+    <div class="navbar notranslate">
+		<a class ="active" href="index.html">Home</a>
+    <a href="https://www.youtube.com/channel/UCGKdpeH_SC4hB_5ix_ThBUA" target="_blank">Youtube</a>
+		<a href="">3D Printing</a></li>
+		<a href="">Anime</a>
+    <a href="mitachibana/index.html" target="_blank">.dev</a>
+    <a href="https://github.com/mitachibana" target="_blank">GitHub</a>
+		<a href="">About</a>
+	</div>
+    <main>
+      <div class="flexbox1">
+        <div class="flex-left">
+          <a class="weatherwidget-io" style="border-radius: 12px; margin: 10px;" href="https://forecast7.com/en/36d65138d19/nagano/" data-label_1="NAGANO CITY" data-label_2="WEATHER" data-theme="original" data-basecolor="#d768a2" >NAGANO CITY WEATHER</a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
+          <div class="flex-notices">
+            <div class="flex-notices-sticky">
+              <div class="greeting">
+                <h3>📌 mitachibana.com can now be found on the dev button above.</h3>
+                <p class="date">23 June 2024</p>
+                <details>
+                  <summary>
+                    <p class="expand view-post">Details</p>
+                    <p class="close view-post">Close</p>
+                  </summary>
+                  <p>
+                  The site was previously mitachibana.com. I have since moved to a vps and bought this kanjukumango.moe domain. The old mitachibana.com domain is no longer active! I will keep the old site content but it will be my personal blog. It can be accessed in the navbar via the "dev" button. *The "3D Printing" "Anime" and "About" pages are not up yet!</p>
+                </details>
+              </div>
+            </div>
+            <div class="flex-notices-sticky">
+              <div class="google-translate">
+                <h2>Translate page</h2>
+                <div id="google_translate_element"></div>
+              </div>
+              <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                    { pageLanguage: "en" },
+                    "google_translate_element"
+                  );
+                }
+              </script>
+              <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+          </div>
+        </div>
+        <div class="flex-right">
+          <iframe
+            class="sidebar-iframe"
+            src="sidebar.html"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
