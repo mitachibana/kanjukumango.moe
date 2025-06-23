@@ -1,2 +1,17 @@
+# Node-related
 node_modules/
+npm-debug.log
+
+# PM2 + Logs
+logs/
+*.log
+pm2.log
+.pids
+.pm2/
+
+# Environment Configs
 .env
+
+# System files
+.DS_Store
+Thumbs.db
