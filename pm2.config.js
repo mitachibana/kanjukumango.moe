@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'my-dynamic-site',
-      script: 'server.js',
+      name: 'kanjukumango.moe',
+      script: './server.js',
       env: {
         NODE_ENV: 'production',
         PORT: 3000
