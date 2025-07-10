@@ -34,9 +34,9 @@
       <img class="logo" src="media/kanjuku-mango-logo.webp" />
     </div>
     <div class="navbar notranslate">
-		<a class ="active" href="index.html">Home</a>
+		<a class ="active" data-page="home">Home</a>
     <a href="https://www.youtube.com/channel/UCGKdpeH_SC4hB_5ix_ThBUA" target="_blank">Youtube</a>
-		<a href="">3D Printing</a></li>
+		<a data-page="3dprint">3D Printing</a></li>
 		<a href="">Anime</a>
     <a href="mitachibana/index.html" target="_blank">.dev</a>
     <a href="https://github.com/mitachibana" target="_blank">GitHub</a>
@@ -45,23 +45,9 @@
     <main>
       <div class="flexbox1">
         <div class="flex-left">
-          <a class="weatherwidget-io" style="border-radius: 12px; margin: 10px;" href="https://forecast7.com/en/36d65138d19/nagano/" data-label_1="NAGANO CITY" data-label_2="WEATHER" data-theme="original" data-basecolor="#d768a2" >NAGANO CITY WEATHER</a>
-          <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-          </script>
           <div class="flex-notices">
             <div class="flex-notices-sticky">
-              <div class="greeting">
-                <h3>📌 mitachibana.com can now be found on the dev button above.</h3>
-                <p class="date">23 June 2024</p>
-                <details>
-                  <summary>
-                    <p class="expand view-post">Details</p>
-                    <p class="close view-post">Close</p>
-                  </summary>
-                  <p>
-                  The site was previously mitachibana.com. I have since moved to a vps and bought this kanjukumango.moe domain. The old mitachibana.com domain is no longer active! I will keep the old site content but it will be my personal blog. It can be accessed in the navbar via the "dev" button. *The "3D Printing" "Anime" and "About" pages are not up yet!</p>
-                </details>
+              <div id="content" class="greeting">
               </div>
             </div>
             <div class="flex-notices-sticky">
@@ -90,5 +76,6 @@
         </div>
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
