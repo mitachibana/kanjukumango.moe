@@ -1,18 +1,27 @@
 function loadPage(page) {
-  const url = page.endsWith(".html") ? page : `pages/${page}.html`;
+  const content = document.getElementById('content');
 
-  fetch(url)
-    .then(response => {
-      if (!response.ok) throw new Error("Page not found");
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('content').innerHTML = html;
-      attachNavHandlers(); // <- reattach after content load
-    })
-    .catch(error => {
-      document.getElementById('content').innerHTML = "<p>Error loading page.</p>";
-    });
+  // Fade out content
+  content.classList.add('fade-out');
+
+  setTimeout(() => {
+    const url = page.endsWith(".html") ? page : `content/${page}.html`;
+
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error("Page not found");
+        return response.text();
+      })
+      .then(html => {
+        content.innerHTML = html;
+        content.classList.remove('fade-out');
+        attachNavHandlers();
+      })
+      .catch(error => {
+        content.innerHTML = "<p>Error loading page.</p>";
+        content.classList.remove('fade-out');
+      });
+  }, 300);
 }
 
 function attachNavHandlers() {
@@ -26,14 +35,11 @@ function attachNavHandlers() {
   });
 }
 
-// Run once on load
 attachNavHandlers();
 
-// Load correct page on first load
 const initialPage = location.hash.replace('#', '') || 'home';
 loadPage(initialPage);
 
-// Support back/forward buttons
 window.addEventListener('popstate', (event) => {
   const page = event.state?.page || 'home';
   loadPage(page);
