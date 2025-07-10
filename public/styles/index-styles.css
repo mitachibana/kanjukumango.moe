@@ -100,7 +100,7 @@ li {
 
 .flex-notices {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .flex-notices-sticky {
