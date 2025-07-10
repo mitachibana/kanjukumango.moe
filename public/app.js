@@ -5,7 +5,7 @@ function loadPage(page) {
   content.classList.add('fade-out');
 
   setTimeout(() => {
-    const url = page.endsWith(".html") ? page : `content/${page}.html`;
+    const url = page.endsWith(".html") ? page : `pages/${page}.html`;
 
     fetch(url)
       .then(response => {
