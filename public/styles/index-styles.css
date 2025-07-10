@@ -3,7 +3,7 @@ body {
   margin: auto;
   top: 0px !important;
   text-align: center;
-  font-family: tahoma;
+  font-family: sans-serif;
   color: white;
   background-color: #FAA5BA;
 }
@@ -107,6 +107,16 @@ li {
   display: flex;
   flex-direction: column;
   flex: 50%;
+}
+
+.translate-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #d768a2;
+  border-radius: 12px;
 }
 
 .google-translate {
