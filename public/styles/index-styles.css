@@ -109,6 +109,15 @@ li {
   flex: 50%;
 }
 
+#content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#content.fade-out {
+  opacity: 0;
+}
+
 .translate-container {
   display: flex;
   flex-direction: row;
