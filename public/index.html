@@ -74,7 +74,21 @@
           "google_translate_element"
         );
       }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+      // Detect iOS
+      const isIOS = /iP(hone|od|ad)/.test(navigator.userAgent);
+
+      // Check if iframe appears after delay (widget loaded)
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          const iframe = document.querySelector("#google_translate_element iframe");
+          if (!iframe || isIOS) {
+            document.getElementById("google_translate_element").style.display = "none";
+            document.getElementById("translate-fallback").style.display = "block";
+          }
+        }, 2000); // wait 2 seconds for widget to try loading
+      });
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
