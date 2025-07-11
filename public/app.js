@@ -21,7 +21,7 @@ function loadPage(page) {
         content.innerHTML = "<p>Error loading page.</p>";
         content.classList.remove('fade-out');
       });
-  }, 300);
+  }, 100);
 }
 
 function attachNavHandlers() {
