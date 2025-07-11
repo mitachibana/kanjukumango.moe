@@ -70,6 +70,8 @@ h4 {
   margin: 10px;
   background-color: #d768a2;
   border-radius: 12px;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .server-pic {
