@@ -6,12 +6,12 @@ body {
   font-family: sans-serif;
   color: white;
   background-color: #FAA5BA;
+  animation: fadeIn 3s;
 }
 
 .logo {
   height: 8vh;
   margin-top: 10px;
-  animation: fadeIn 2.5s;
 }
 
 body > .skiptranslate {
@@ -34,7 +34,6 @@ h1 {
   margin: 0;
   padding: 0;
   background-color: #EACD50; 
-  animation: fadeIn 2.5s;
 }
 
 .navbar a {
@@ -194,7 +193,6 @@ h4 {
   flex: 25%;
   height: 1800px;
   padding: 0;
-  animation: fadeIn 2.5s;
 }
 
 .link-container {
@@ -225,8 +223,6 @@ h4 {
   margin: 10px;
   background-color: #d768a2;
   border-radius: 12px;
-  opacity: 1;
-  transition: opacity 0.1s ease-in-out;
 }
 
 .server-pic {
