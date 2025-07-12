@@ -11,6 +11,7 @@ body {
 .logo {
   height: 8vh;
   margin-top: 10px;
+  animation: fadeIn 2.5s;
 }
 
 body > .skiptranslate {
