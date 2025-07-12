@@ -33,6 +33,7 @@ h1 {
   margin: 0;
   padding: 0;
   background-color: #EACD50; 
+  animation: fadeIn 2.5s;
 }
 
 .navbar a {
@@ -192,7 +193,7 @@ h4 {
   flex: 25%;
   height: 1800px;
   padding: 0;
-  animation: fadeIn 1s;
+  animation: fadeIn 2.5s;
 }
 
 .link-container {
