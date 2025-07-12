@@ -192,6 +192,8 @@ h4 {
   flex: 25%;
   height: 1800px;
   padding: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .link-container {
