@@ -15,12 +15,15 @@ a:visited {color:grey;}
 a:hover {background-color:#111;}
 a:active {background-color:#00b0ff;}
 
+.date {margin:0}
+
 .flexbox1 {display:flex;margin:10px;flex-wrap:wrap;}
 .flex-left {display:flex;flex-direction:column;flex:75%;padding:0;text-align:left;}
 .flex-notices {display:flex;flex-direction:column;}
 .flex-notices-sticky {display:flex;flex-direction:column;flex:50%;}
 #content {opacity:1;transition:opacity .3s ease-in-out;}
 #content.fade-out {opacity: 0;}
+.content {margin:10px;padding:10px;border-radius:12px;}
 
 .translate-container {display:flex;flex-direction:row;align-items:center;justify-content:center;margin:10px;background-color:#d768a2;border-radius:12px;}
 .google-translate {display:flex;flex-direction:column;align-items:center;margin:10px;padding:10px;background-color:#d768a2;border-radius:12px;justify-content:center;}
