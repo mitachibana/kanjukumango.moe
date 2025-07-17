@@ -25,7 +25,7 @@ function loadPage(page) {
 }
 
 function attachNavHandlers() {
-  document.querySelectorAll('.navbar a[data-page]').forEach(link => {
+  document.querySelectorAll('[data-page]').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       const page = this.getAttribute('data-page');
