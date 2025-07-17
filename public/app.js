@@ -9,7 +9,9 @@ function loadPage(page) {
 
     fetch(url)
       .then(response => {
-        if (!response.ok) throw new Error("Page not found");
+        if (!response.ok) {
+          return fetch('content/404.html').then(r => r.text());
+        }
         return response.text();
       })
       .then(html => {
