@@ -10,7 +10,7 @@ function loadPage(page) {
     fetch(url)
       .then(response => {
         if (!response.ok) {
-          return fetch('content/404.html').then(r => r.text());
+          return fetch('pages/404.html').then(r => r.text());
         }
         return response.text();
       })
