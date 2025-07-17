@@ -10,6 +10,7 @@ function loadPage(page) {
     fetch(url)
       .then(response => {
         if (!response.ok) {
+          history.replaceState({}, '', '#404');
           return fetch('pages/404.html').then(r => r.text());
         }
         return response.text();
