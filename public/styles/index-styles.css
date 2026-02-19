@@ -68,7 +68,7 @@ a:active {background-color:#00b0ff;}
 
 /* Customizing the theme color (e.g., to match Satono Diamond's green/black) */
 :root {
-  --swiper-theme-color: #2e7d32; 
+  --swiper-theme-color: #00b0ff; 
 }
 
 
@@ -81,6 +81,7 @@ a:active {background-color:#00b0ff;}
   .flex-left,.flex-right {flex:100%;}
   .flex-notices {flex-direction:column;}
 } 
+
 
 
 
