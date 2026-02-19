@@ -42,13 +42,19 @@ a:active {background-color:#00b0ff;}
 .link-img {max-height:50px;border-radius:12px;padding:10px;}
 .media {margin:10px;}
 
-/* Container size */
 .swiper {
   width: 100%;
   max-width: 900px; /* Limits size on your PC */
   height: 500px;    /* Set a height or use 'auto' */
   border-radius: 12px;
   margin: 20px auto;
+  z-index: 1;
+  pointer-events: auto
+}
+
+.swiper-button-next, .swiper-button-prev {
+  pointer-events: auto !important;
+  cursor: pointer;
 }
 
 .swiper-slide {
