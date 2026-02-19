@@ -18,7 +18,7 @@ a:hover {background-color:#111;}
 a:active {background-color:#00b0ff;}
 
 .date {margin:0}
-.article-img {max-width: 100%; height: auto; display: block; border-radius: 12px}
+.article-img {max-width:100%;height:auto;border-radius:12px}
 .disclaimer {margin:0;font-size:x-small;}
 
 .flexbox1 {display:flex;margin:10px;flex-wrap:wrap;}
