@@ -8,6 +8,7 @@
       name="description"
       content="Lots of mangoes, a blog, and just being bocchi bocchi"
     />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link href="styles/index-styles.css" rel="stylesheet" />
     <link
       rel="apple-touch-icon"
@@ -77,5 +78,38 @@
       }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    const swiper = new Swiper('.swipe-gallery', {
+      // Optional parameters
+      loop: true,
+      grabCursor: true, // Shows a "hand" icon on PC
+
+      // Pagination (Dots)
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation (Arrows)
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // Responsive Breakpoints
+      breakpoints: {
+        // When window width is >= 320px (Phones like S25 Ultra)
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // When window width is >= 1024px (PC/Laptops)
+        1024: {
+          slidesPerView: 2, // Shows two images side-by-side
+          spaceBetween: 30
+        }
+      }
+    });
+  </script>
 </body>
 </html>
