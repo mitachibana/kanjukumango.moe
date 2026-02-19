@@ -61,7 +61,7 @@ a:active {background-color:#00b0ff;}
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000; /* Black bars if image doesn't fit perfectly */
+  background: #d768a2;
 }
 
 .swiper-slide img {
@@ -85,4 +85,5 @@ a:active {background-color:#00b0ff;}
   .flex-left,.flex-right {flex:100%;}
   .flex-notices {flex-direction:column;}
 } 
+
 
