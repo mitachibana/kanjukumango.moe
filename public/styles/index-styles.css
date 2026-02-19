@@ -57,6 +57,9 @@ a:active {background-color:#00b0ff;}
   cursor: pointer;
 }
 
+.swiper-button-prev { left: 10px; }
+.swiper-button-next { right: 10px; }
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -81,6 +84,7 @@ a:active {background-color:#00b0ff;}
   .flex-left,.flex-right {flex:100%;}
   .flex-notices {flex-direction:column;}
 } 
+
 
 
 
