@@ -34,7 +34,7 @@ a:active {background-color:#00b0ff;}
 	
 .content-title {margin:10px;}
 	
-.greeting {margin:10px;background-color:#d768a2;border-radius:12px;}
+.greeting {margin:10px;padding:10px;background-color:#d768a2;border-radius:12px;}
 
 .sidebar-iframe {display:flex;flex:25%;border-style:none;}
 .flex-right {display:flex;flex-direction:column;flex:25%;height:1800px;padding:0;}
@@ -85,3 +85,4 @@ a:active {background-color:#00b0ff;}
   .flex-left,.flex-right {flex:100%;}
   .flex-notices {flex-direction:column;}
 } 
+
