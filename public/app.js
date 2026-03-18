@@ -1,13 +1,25 @@
+let currentTimeout = null;
+let abortController = null;
+
 function loadPage(page) {
   const content = document.getElementById('content');
+
+  if (abortController) {
+    abortController.abort();
+  }
+  abortController = new AbortController();
+
+  if (currentTimeout) {
+    clearTimeout(currentTimeout);
+  }
 
   // Fade out content
   content.classList.add('fade-out');
 
-  setTimeout(() => {
-    const url = `pages/${page}.html`;;
+  currentTimeout = setTimeout(() => {
+    const url = `pages/${page}.html`;
 
-    fetch(url)
+    fetch(url, { signal: abortController.signal })
       .then(response => {
         if (!response.ok) {
           history.replaceState({}, '', '#404');
@@ -19,10 +31,15 @@ function loadPage(page) {
         content.innerHTML = html;
         content.classList.remove('fade-out');
         attachNavHandlers();
+        if (typeof initSwiper === 'function') {
+          initSwiper();
+        }
       })
       .catch(error => {
-        content.innerHTML = "<p>Error loading page.</p>";
-        content.classList.remove('fade-out');
+        if (error.name !== 'AbortError') {
+          content.innerHTML = "<p>Error loading page.</p>";
+          content.classList.remove('fade-out');
+        }
       });
   }, 300);
 }
