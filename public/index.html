@@ -80,12 +80,18 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="scripts/swiper-bundle.min.js"></script>
   <script>
-    // This 'window.onload' is a "hammer" to ensure EVERYTHING (images/scripts) is ready
-    window.onload = function() {
-      console.log("Swiper: window.onload fired.");
+    window.initSwiper = function() {
+      console.log("Swiper: initSwiper called.");
 
       // We check if the 'Swiper' function actually exists
       if (typeof Swiper !== 'undefined') {
+        const swiperElements = document.querySelectorAll('.gallery');
+        swiperElements.forEach(el => {
+          if (el.swiper) {
+            el.swiper.destroy(true, true);
+          }
+        });
+
         const swiper = new Swiper('.gallery', {
           // Essential Settings
           loop: true,
@@ -94,13 +100,13 @@
             delay: 2500,
             disableOnInteraction: false,
           },
-          
+
           // Navigation Hooks
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
-          
+
           // Pagination Hooks
           pagination: {
             el: '.swiper-pagination',
@@ -110,6 +116,13 @@
         console.log("Swiper: Initialized successfully!");
       } else {
         console.error("Swiper: The library was not found in the browser memory.");
+      }
+    };
+
+    // This 'window.onload' is a "hammer" to ensure EVERYTHING (images/scripts) is ready
+    window.onload = function() {
+      if (typeof initSwiper === 'function') {
+        initSwiper();
       }
     };
 </script>
