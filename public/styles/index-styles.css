@@ -44,9 +44,8 @@ a:active {background-color:#00b0ff;}
 
 .swiper {
   width: 100%;
-  max-width: 900px; /* Limits size on your PC */
-  height: 500px;    /* Set a height or use 'auto' */
-  border-radius: 12px;
+  max-width: auto; /* Limits size on your PC */
+  height: auto;    /* Set a height or use 'auto' */
   margin: 20px auto;
   z-index: 1;
   pointer-events: auto
