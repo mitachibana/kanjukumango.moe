@@ -29,7 +29,7 @@ a:active {background-color:#00b0ff;}
 #content.fade-out {opacity: 0;}
 .content {padding:5px;border-radius:12px;}
 .post-pic {display: flex;justify-content:center;margin:10px;flex:75%;flex-wrap:wrap}
-.post-pic img {flex:0 0;margin:5px;max-width:45%;border-radius:12px}
+.post-pic img {flex:0 0;object-fit:cover;margin:5px;max-width:45%;border-radius:12px}
 
 .translate-container {display:flex;flex-direction:row;align-items:center;justify-content:center;margin:10px;background-color:#1c2031;border-radius:12px;}
 .google-translate {display:flex;flex-direction:column;align-items:center;margin:0px;padding:10px;background-color:#1c2031;border-radius:12px;justify-content:center;}
