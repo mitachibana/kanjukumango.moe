@@ -52,6 +52,7 @@ a:active {background-color:#00b0ff;}
 @media (max-width:1350px) {
   .flex-left,.flex-right {flex:100%;}
   .flex-notices {flex-direction:column;}
+  .post-pic img{max-width:100%}
 } 
 
 @media (max-width:768px) {
