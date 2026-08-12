@@ -42,39 +42,6 @@ a:active {background-color:#00b0ff;}
 .link-img {max-height:50px;border-radius:12px;padding:10px;}
 .media {margin:10px;}
 
-.swiper {
-  width: 100%;
-  max-width: 1200px; /* Limits size on your PC */
-  height: 500px;    /* Set a height or use 'auto' */
-  margin: 20px auto;
-  overflow: hidden;
-  z-index: 1;
-  pointer-events: auto
-}
-
-.swiper-button-next, .swiper-button-prev {
-  pointer-events: auto !important;
-  cursor: pointer;
-}
-
-.swiper-button-prev { left: 10px; }
-.swiper-button-next { right: 10px; }
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #1c2031;
-}
-
-.swiper-slide img {width: 100%;height: 100%;border-radius:12px;object-fit: contain;}
-
-/* Customizing the theme color (e.g., to match Satono Diamond's green/black) */
-:root {
-  --swiper-theme-color: #00b0ff; 
-}
-
-
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
