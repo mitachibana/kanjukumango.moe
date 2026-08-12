@@ -53,14 +53,7 @@ a:active {background-color:#00b0ff;}
   .flex-left,.flex-right {flex:100%;}
   .flex-notices {flex-direction:column;}
   .post-pic img{max-width:100%}
-} 
-
-@media (max-width:768px) {
-  .swiper {
-    height: 300px;
-  }
 }
-
 
 
 
